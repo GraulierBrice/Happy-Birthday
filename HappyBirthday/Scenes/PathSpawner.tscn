@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/PathSpawner.gd" type="Script" id=1]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -51.8576, 49.0179, 0, 0, 0, 0, -11.0104, 91.7874, 0, 0, 0, 0, 52.9035, 148.493, 0, 0, 0, 0, 156.223, 220.096, 0, 0, 0, 0, 337.435, 303.331, 0, 0, 0, 0, 600.449, 357.355, 0, 0, 0, 0, 822.234, 375.837, 0, 0, 0, 0, 1107.99, 377.259 )
+}
+
+[node name="PathSpawner" type="Path2D"]
+position = Vector2( 0.0370865, -0.0370808 )
+curve = SubResource( 1 )
+script = ExtResource( 1 )
+group = 4
+seperation = 3
+
+[node name="Spawn" type="Timer" parent="."]
+one_shot = true
+[connection signal="timeout" from="Spawn" to="." method="_on_Spawn_timeout"]
