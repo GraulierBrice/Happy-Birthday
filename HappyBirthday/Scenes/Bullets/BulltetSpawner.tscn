@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Bullets/BulletSpawner.gd" type="Script" id=1]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource( 1 )
+direction = Vector2( 1, 1 )
+
+[node name="Reload" type="Timer" parent="."]
+
+[node name="Delay" type="Timer" parent="."]
+[connection signal="timeout" from="Reload" to="." method="_on_Reload_timeout"]
+[connection signal="timeout" from="Delay" to="." method="_on_Delay_timeout"]

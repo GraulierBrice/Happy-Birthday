@@ -20,7 +20,7 @@ config/icon="res://Assets/icon.png"
 
 [display]
 
-window/size/width=1748
+window/size/width=1504
 window/size/height=1024
 
 [rendering]

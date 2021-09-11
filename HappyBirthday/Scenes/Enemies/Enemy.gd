@@ -11,6 +11,7 @@ var has_stopped = false
 
 func _ready():
 	$Mover.start(delay)
+	
 	pass
 
 func _process(delta):
