@@ -23,6 +23,7 @@ func _on_Reload_timeout():
 	new_bullet.direction = direction
 	new_bullet.scale = self.scale
 	new_bullet.position = global_position
+	new_bullet.get_child(0).collision_mask = 2
 	get_viewport().add_child(new_bullet)
 	pass # Replace with function body.
 

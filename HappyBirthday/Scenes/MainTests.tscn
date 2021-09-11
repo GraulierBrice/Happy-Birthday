@@ -38,6 +38,7 @@ render_target_update_mode = 3
 
 [node name="Enemy" parent="TextureRect/Game View/Viewport/PathSpawner" instance=ExtResource( 4 )]
 position = Vector2( -51.8576, 49.0179 )
+scale = Vector2( 2, 2 )
 speed = 200
 stop = 0.3
 stop_time = 2.0
